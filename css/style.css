@@ -1,0 +1,114 @@
+:root {
+    --main-color: #0078ff;
+}
+
+.main-color {
+    color: var(--main-color);
+}
+
+.border-main-color {
+    border-color: var(--main-color) !important;
+}
+
+.bg-main-color {
+    background-color: var(--main-color);
+}
+
+hr {
+    border: 1.5px solid;
+    opacity: 1;
+}
+
+nav .collapse ul li {
+    position: relative;
+}
+
+nav .collapse ul li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    height: 2px;
+    width: 0;
+    background-color: white;
+    transition: .4s;
+}
+
+nav .collapse ul li:hover::after {
+    width: 50%;
+}
+
+nav .collapse .dropdown:hover .dropdown-menu {
+    display: inline;
+}
+
+header {
+    background: linear-gradient(#00000087, #00000087), url(../imges/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.services .icon {
+    width: 100px;
+    height: 100px;
+    transition: .4s;
+}
+
+.services .card:hover .icon {
+    background-color: var(--main-color);
+}
+
+.portfolio .card {
+    overflow: hidden;
+}
+
+.portfolio .card img {
+    transition: .4s;
+}
+
+.portfolio .card p {
+    font-size: 13px;
+}
+
+.portfolio .card a {
+    border: 2px solid var(--main-color);
+}
+
+.portfolio .card:hover img {
+    transform: scale(1.2);
+}
+
+.carousel {
+    background: linear-gradient(#0077ffa3, #0077ffa3), url(../imges/overlay-bg.jpg);
+}
+
+.carousel .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+}
+
+.card-body a h5 {
+    transition: .5s;
+}
+
+.card-body a:hover h5 {
+    color: var(--main-color);
+}
+
+.category {
+    top: 47%;
+    left: 36%;
+    padding: 6px 0 0;
+}
+
+.category h6 {
+    font-size: 14px;
+}
+
+.contact {
+    background: linear-gradient(#0077ffa3, #0077ffa3), url(../imges/overlay-bg.jpg);
+}
+
+footer {
+    background-color: var(--main-color);
+}
